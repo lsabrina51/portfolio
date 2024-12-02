@@ -7,20 +7,38 @@
     <!--include CSS later-->
     <!--TODO: Write in accessibility options-->
     <title>Sabrina's Portfolio</title>
+    <script src="https://kit.fontawesome.com/542a7b699c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
+    <i class="fa-solid fa-bars"></i>
     <nav>
-        <ol>
-            <li><a href = "">Home</a></li>
-            <li><a href = "">Resume</a></li>
-            <li><a href = "">Projects</a></li>
-        </ol>
+        <ul>
+            <li><a href = "personal.html">About Me</a></li>
+            <li><a href = "professional.html">Experience</a></li>
+            <li><a href = "index.html">Home</a></li>
+        </ul>
     </nav>
+
+
+    <main>
     
-    <div class = "slides" id = "slide1">
-        <h1>Sabrina Lin</h1>
-        <h2>About Me</h2>
-        <img src = "selfie.png" height = 200 alt = "A picure of Sabrina Lin">
+    <section id = "intro">
+        
+        <div id = "pfp">
+            <h1>Welcome!</h1>
+
+            <img src = "images/profile2.jpg" height = 200 alt = "A picure of Sabrina Lin">
+            <div id = "pfp-icons">
+                <a href = "https://www.linkedin.com/in/linsab" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href = "mailto:linsabrina51@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <!--How do you have hover text over it, similar to alt?-->
+                <a href = "" aria-label="Download Resume" download><i class="fa-solid fa-file"></i></a>
+            </div>
+        </div>
+        
         <p>Hi, there! Welcome to my little section of the internet. 
             I am a sophmore studying Computer Science at the University of Michigan-Ann Arbor. 
             I am originally from New York. 
@@ -28,67 +46,81 @@
             My hobbies include reading romance and fantasy books (my current favorite author is Erin Morgenstein), 
             baking, and cooking. Basically anything where I am making something with my hands. 
         </p>
-        <button>Next</button>
-    </div>
+    </section>
 
-    <div class = "slides" id = "slide2">
-        <h2>Coming Soon</h2>
+    <section id = "experience">
+        <h2>Experiences</h2>
 
-        <ol>
-            <li><p>A webcrawler that searches for internships</p></li>
-            <li><p>Resturant mockup website</p></li>
-            <li><p>Learning SQL</p></li>
-        </ol>
+        <!--Preview: slideshow?-->
+        <div id = "experience-gallery">
+            <!--Club site, UROP, phishing submission, -->
+            <div class = "click-image" id = "click-image-1">
+                <img src = "images/mqc.jpeg" alt = "Example of bathmetry coloring">
+                <a href = "professional.html"><p>MCQ Website</p></a>
+            </div>
 
-    </div>>
-        <h2>Organizations</h2>
+            <div class = "click-image" id = "click-image-2">
+                <img src = "images/huron.jpg" alt = "Example of bathmetry coloring">
+                <a href = "professional.html"><p>Phishing Trivia</p></a>
+            </div>
 
-        <div>
-            <h3>Kessler Student Advisory Board</h3>
-            <p>I am the co-chair of the sub-commitee Programs and Even Planning
-                (PEP). PEP plans events to help with strengthen bonds between Kessler scholarship recipients. 
-            </p>
+            <div class = "click-image" id = "click-image-3">
+                <img src = "images/huron.jpg" alt = "Example of bathmetry coloring">
+                <a href = "professional.html"><p>Shipwreck Detction</p></a>
+            </div>
+        </div>
+        <a id = "experience-learn-more" href = "professional.html">Click Here to Learn more
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </section>
+
+    <br>
+
+    <section id = "personal">
+        <h2>Interests</h2>
+
+
+        <div id = "interests-slide-show">
+            <div class = "card">
+                <img src = "/images/music.jpg" alt = "Hozier singing with Guitar">
+                <a href = "">Music</a>
+            </div>
+            <div class = "card">
+                <img src = "/images/art.jpg" alt = "Vincent Van Gogh's Starry Night">
+                <a href = "">Art</a>
+            </div>
+            <div class = "card">
+                <img src = "/images/books.jpeg" alt = "Pile of books">
+                <a href = "">Reading</a>
+
+            </div>
+
+            <button id = "prev" class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button id = "next" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
 
-        <div>
-            <h3>Michigan Technical Investments (MTI)</h3>
-            
-            <p>I am currently the Vice-President of Education.
-                MTI that explores the quantaum computing and finances.
-            
-                Developed official website and am in charge of training new members.</p>
-        </div>
+       
 
-    </div>
+    </section>
 
-    <div class = "slides" id = "slide3">
-        <h2>Coming Soon</h2>
-
-        <ol>
-            <li><p>A webcrawler that searches for internships</p></li>
-            <li><p>Resturant mockup website</p></li>
-            <li><p>Learning SQL</p></li>
-        </ol>
-
-    </div>
+    </main>
+    
+    <br>
 
     <footer>
         <h2>Contact Me</h2>
         <ol>
             <li>
-                <a href = "https://www.linkedin.com/in/linsab">
-                    <img src = "linkedin.png" width = "20px" target = "_blank">
-                    <p>LinkedIn</p>
-                </a>
+                <a href = "https://www.linkedin.com/in/linsab">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
             </li>
             <li>
-                <a href = "mailto:linsabrina51@gmail.com">
-                    <img src = "email.png" width = "20px">
-                    <p>Email </p>
-                </a>
+                <a href = "mailto:linsabrina51@gmail.com">Email <i class="fa-solid fa-envelope"></i></a>
+
             </li>
         </ol>
     </footer>
     
+    <script src = "js/index.js"></script>
 </body>
 </html>
