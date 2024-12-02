@@ -19,6 +19,26 @@ a{
     color: black; 
 }
 
+/*Skip button*/ 
+#skip-btn{
+    background-color: green;
+    color: white; 
+    padding: 10px; 
+    border-radius: 5%;
+    position: absolute;
+    transform: translateY(-250%);
+    z-index: 100;
+}
+
+#skip-btn:focus{
+    transform: translateY(0%);
+}
+
+#skip-btn:hover{
+    color: black; 
+}
+
+
 
 /*Nav bar*/
 .fa-solid.fa-bars{

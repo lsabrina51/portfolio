@@ -60,6 +60,19 @@ nav{
     margin-bottom: 25px;
 }
 
+#skip-spotify-btn{
+    background-color: green;
+    color: white;
+    padding: 10px; 
+    border-radius: 5%;
+    position: absolute;
+    transform: translateX(-250%);
+    z-index: 100;
+}
+
+#skip-spotify-btn:focus{
+    transform: translateX(0%);
+}
 
 /*Skip button*/ 
 #skip-btn{
@@ -69,6 +82,7 @@ nav{
     border-radius: 5%;
     position: absolute;
     transform: translateY(-250%);
+    z-index: 100;
 }
 
 #skip-btn:focus{
@@ -79,7 +93,32 @@ nav{
     color: black; 
 }
 
-/*music*/ 
+/*art*/
+.art-gallery{
+    display: grid;
+    width: 80vw;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    gap: 10px; 
+}
+
+#art5{
+    grid-column: 3;
+}
+
+#art4{
+    grid-column: 2;
+    grid-row: 1/span 2;
+    object-fit: fill;
+}
+
+.art-pics{
+    object-fit: cover;
+    height: 100%;
+    
+}
+
+
+/*book*/
 .description{
     display:none;
 }
@@ -176,6 +215,10 @@ footer a:hover{
         margin-right: auto;
     }
 
+    .art-gallery{
+        width: 70vw;
+    }
+
     .book-grid{
         grid-template: 1fr / 1fr 1fr 1fr;
     }
@@ -195,6 +238,7 @@ footer a:hover{
     #book1:focus, #book2:focus, #book3:focus{
         .book-grid{
             grid-template: 1fr 1fr / 1fr 1fr 1fr;
+
         }
 
         grid-column: 1/span 3;

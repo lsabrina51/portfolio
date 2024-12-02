@@ -35,6 +35,8 @@ a{
     border-radius: 5%;
     position: absolute;
     transform: translateY(-250%);
+    z-index: 100;
+
 }
 
 #skip-btn:focus{
