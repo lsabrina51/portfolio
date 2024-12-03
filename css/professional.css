@@ -119,7 +119,7 @@ nav{
     left: 5%;
   }
 
-  .card:hover .card-inner {
+  .card:hover .card-inner, .card:focus .card-inner{
     transform: rotateY(180deg);
   }
 
